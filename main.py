@@ -1,7 +1,7 @@
 import vk_api
 from vk_api.bot_longpoll import VkBotLongPoll, VkBotEventType
 
-main_token = '66789f57316dd90cd3714d0b4de68d3235214ca67637b69d7891d461bb66b382e7f645aae616edd2fdd5c'
+main_token = '67f3d7f2fecbcfb643397182811d26bf3942e01021a406f365f5126f5e32ff68e1c90da290e4ee9ed2756'
 
 vk_session = vk_api.VkApi(token=main_token)
 longpoll = VkBotLongPoll(vk_session, 206197090)
