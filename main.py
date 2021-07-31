@@ -13,6 +13,6 @@ for event in longpoll.listen():
     if event.type == VkBotEventType.MESSAGE_NEW:
         if event.from_chat:
             id = event.chat_id
-            msg = event.object.message['text'].lower()
+            msg = event.text.lower()
             if msg == "test":
                 sender(id, "testing...")
