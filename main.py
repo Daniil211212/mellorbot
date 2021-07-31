@@ -13,7 +13,7 @@ for event in longpoll.listen():
     if event.type == VkBotEventType.MESSAGE_NEW:
         if event.from_chat:
             id = event.chat_id
-            msg = event.object.message['text'].lower()
+            msg == event.object.message['text'].lower()
             if msg == "#pokex5":
                 for i in range(5):
                     sender(id, "@all, @all, @all, @all, @all. Poke Машина запущена")
