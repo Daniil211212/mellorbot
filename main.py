@@ -14,13 +14,13 @@ for event in longpoll.listen():
         if event.from_chat:
             id = event.chat_id
             msg = event.object.message['text'].lower()
-            elif msg == "#pokex5":
+            if msg == "#pokex5":
                 for i in range(5):
                     sender(id, "@all, @all, @all, @all, @all. Poke Машина запущена")
-            elif msg == "#status":
+            if msg == "#status":
                 sender(id, "Status: Online, Dev: @rodionovd21, если вылезло это сообщение - бот готов к работе.")
-            elif msg == "#pokex10":
+            if msg == "#pokex10":
                 for i in range(10):
                     sender(id, "@all, @all, @all, @all, @all. Poke Машина запущена")
-            elif msg == "Привет":
+            if msg == "Привет":
                 sender(id, "Привет!")
