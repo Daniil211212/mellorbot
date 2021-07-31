@@ -13,14 +13,14 @@ for event in longpoll.listen():
     if event.type == VkBotEventType.MESSAGE_NEW:
         if event.from_chat:
             id = event.chat_id
-            msg == event.object.message['text'].lower()
-            if msg == "#pokex5":
+            msg = event.object.message['text'].lower()
+            elif msg == "#pokex5":
                 for i in range(5):
                     sender(id, "@all, @all, @all, @all, @all. Poke Машина запущена")
-            if msg == "#status":
+            elif msg == "#status":
                 sender(id, "Status: Online, Dev: @rodionovd21, если вылезло это сообщение - бот готов к работе.")
-            if msg == "#pokex10":
+            elif msg == "#pokex10":
                 for i in range(10):
                     sender(id, "@all, @all, @all, @all, @all. Poke Машина запущена")
-            if msg == "Привет":
+            elif msg == "Привет":
                 sender(id, "Привет!")
